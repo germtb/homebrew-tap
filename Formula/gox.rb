@@ -5,21 +5,21 @@
 class Gox < Formula
   desc "JSX-like syntax for Go"
   homepage "https://github.com/germtb/gox"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/germtb/gox/releases/download/v0.1.2/gox_darwin_amd64.tar.gz"
-      sha256 "c89636aaf96010d6c2d3029b50e48799ac540c88eb0842c72bcd5a94a2f6504c"
+      url "https://github.com/germtb/gox/releases/download/v0.1.3/gox_darwin_amd64.tar.gz"
+      sha256 "9e52e0a8e51a7d555c2fc79cee9d1e314d88f273e497a5ca2895045d38f10e3e"
 
       def install
         bin.install "gox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/germtb/gox/releases/download/v0.1.2/gox_darwin_arm64.tar.gz"
-      sha256 "2a5117506941fcf67ba3041ae14d3315eb056f363f260eaace3bb1adcebd7d92"
+      url "https://github.com/germtb/gox/releases/download/v0.1.3/gox_darwin_arm64.tar.gz"
+      sha256 "7a68a3871fda487f6bb2a5015c7b3fb42377fbbf8e60c889f542b49c9a02109c"
 
       def install
         bin.install "gox"
@@ -29,15 +29,15 @@ class Gox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/germtb/gox/releases/download/v0.1.2/gox_linux_amd64.tar.gz"
-      sha256 "83996554a84e032eb9c7d3e41aa18c44a137393371b3990d77c12d3b2dcac87e"
+      url "https://github.com/germtb/gox/releases/download/v0.1.3/gox_linux_amd64.tar.gz"
+      sha256 "78a70e5010e650a721e007ab247d17937b3a303ef080cebb1ac3c9f36612c31a"
       def install
         bin.install "gox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/germtb/gox/releases/download/v0.1.2/gox_linux_arm64.tar.gz"
-      sha256 "5c583e9eb50f23c61a1fa36dbc347a04f7ebfa7f3b8d9de915a5967728d2ae54"
+      url "https://github.com/germtb/gox/releases/download/v0.1.3/gox_linux_arm64.tar.gz"
+      sha256 "06e6f30c64ce2b1bdff320f7f6cc00738eb3a77c36c6a1fca3d4711b212c80cd"
       def install
         bin.install "gox"
       end
